@@ -1,0 +1,240 @@
+{
+  "basics": {
+    "name": "Ethan Gill",
+    "label": "Software Engineer",
+    "picture": "http://ethansinjin.com/images/background.jpg",
+    "email": "ethan.gill@live.com",
+    "phone": "+1 (270) 779-0753",
+    "website": "https://ethansinjin.com",
+    "summary": "I'm a Computer Science and Computer Engineering student from Kentucky who's passionate about extraordinary user interactions, Bluetooth, and mobile app development. I attend programming competitions and bike around town in my spare time.",
+    "location": {
+      "address": "University of Kentucky",
+      "postalCode": "",
+      "city": "Lexington",
+      "countryCode": "USA",
+      "region": "Kentucky"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "ethansinjin",
+        "url": "https://twitter.com/ethansinjin"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "ethansinjin",
+        "url": "https://linkedin.com/in/ethansinjin"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Automatic Labs",
+      "position": "iOS Intern",
+      "website": "https://automatic.com",
+      "startDate": "2016-05-16",
+      "endDate": "2016-08-12",
+      "summary": "Automatic Labs develops secure Bluetooth OBD-II hardware that connects cars to the Internet of Things. Features include IFTTT integration, Emergency Services Crash Alert, and metrics.",
+      "highlights": [
+        "Implemented Bluetooth and socket communications for real-time vehicle data using Objective-C on iOS",
+        "Designed several user interface elements for driving metrics user display"
+      ]
+    },
+    {
+      "company": "eLink Design",
+      "position": "Software Engineer",
+      "website": "https://elinkdesign.com",
+      "startDate": "2015-04-01",
+      "summary": "eLink Design is Lexington, KY's premiere app and web development firm. Specializations include mobile messaging, social network applications, and full-featured website administration.",
+      "highlights": [
+        "Developed several class-leading social and enterprise applications using Swift and Objective-C as Lead iOS Developer",
+        "Worked with PHP, MySQL, and JavaScript to create responsive web sites"
+      ]
+    },
+    {
+      "company": "Conceptual Systems Corporation",
+      "position": "iOS Developer",
+      "website": "http://www.conceptualsystems.com",
+      "startDate": "2014-09-01",
+      "endDate": "2015-04-01",
+      "summary": "",
+      "highlights": [
+        "Engineered a suite of iOS applications to replace legacy Android and .NET software"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "CatHacks",
+      "position": "Committee President",
+      "website": "http://cathacks.com",
+      "startDate": "2014-10-01",
+      "summary": "CatHacks is Kentucky's first and furthest-reaching collegiate hackathon. Held each Spring, CatHacks brings college students together from all over the country for a fast-paced weekend of learning, creation, and fun. CatHacks is sanctioned by Major League Hacking.",
+      "highlights": [
+        "Organized Kentucky's first and second national hackathons",
+        "Doubled attendance from 50 to 100 students at second-year event",
+        "Helped raise $20,000 for event over two years from industry leaders including HP and Lexmark"
+      ]
+    },
+    {
+      "organization": "Association for Computing Machinery",
+      "position": "President",
+      "website": "http://acm.cs.uky.edu",
+      "startDate": "2015-04-01",
+      "endDate": "2016-04-01",
+      "summary": "ACM is the oldest Computer Science educational society. It fosters coding outreach programs and provides opportunities to further CS learning.",
+      "highlights": [
+        "Grew chapter membership from 10 students to over 50",
+        "Organized several coding outreach events on University of Kentucky campus"
+      ]
+    },
+    {
+      "organization": "Boy Scouts of America",
+      "position": "Eagle Scout",
+      "website": "http://scouting.org",
+      "startDate": "2004-01-01",
+      "endDate": "2014-09-04",
+      "summary": "The Boy Scouts of America helps young adults live to the fullest by encouraging ample service, teaching civic responsibilities and fitness habits from a young age, and providing a safe environment to learn.",
+      "highlights": [
+        "Completed over 300 service hours including a 100 hour Eagle Scout Project",
+        "Received the highest rank possible in Scouting"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Kentucky",
+      "area": "Computer Science and Computer Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2014-08-20",
+      "endDate": "2018-05-01",
+      "gpa": "3.42",
+      "courses": [
+        "CS 441G - Compilers",
+        "CS 383 - Embedded Systems",
+        "CS 485G - Systems Programming",
+        "CS 485G - iOS Development",
+        "CS 315 - Algorithms",
+        "CS 460 - Machine Learning"
+      ]
+    },
+    {
+      "institution": "Western Kentucky University",
+      "area": "Gatton Academy of Mathematics and Science in Kentucky",
+      "studyType": "Graduate Honors With Distinction",
+      "startDate": "2012-08-19",
+      "endDate": "2014-05-17",
+      "gpa": "3.68",
+      "courses": [
+        "CS 275 - Discrete Mathematics"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best iOS / macOS App",
+      "date": "2015-09-06",
+      "awarder": "PennApps XII",
+      "summary": "Created Token for iOS and Apple Watch, enabling natural-language queries of bank and spending details"
+    },
+    {
+      "title": "Best Use of Plaid API",
+      "date": "2015-09-06",
+      "awarder": "PennApps XII",
+      "summary": "Awarded for exceptional work on Token for iOS"
+    },
+    {
+      "title": "Best Use of BitPay API",
+      "date": "2014-09-21",
+      "awarder": "HackGT",
+      "summary": "Created BitBeacon for iOS, allowing fast Bluetooth LE Bitcoin payments secured with Touch ID"
+    },
+    {
+      "title": "Best Mobile Data Backend",
+      "date": "2013-10-06",
+      "awarder": "HackMIT",
+      "summary": "Developed an iOS application that improved upon iBeacons, a feature available on iOS 7; Competed in this college-only programming competition as a high school student"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "iOS Development",
+      "level": "Master",
+      "keywords": [
+        "Swift",
+        "Objective-C",
+        "Xcode",
+        "ReactiveCocoa",
+        "Cocoapods",
+        "Carthage"
+      ]
+    },
+    {
+      "name": "Android Development",
+      "level": "Advanced",
+      "keywords": [
+        "Java",
+        "Android Studio",
+        "Gradle"
+      ]
+    },
+    {
+      "name": "Full Stack Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "JQuery",
+        "Bootstrap",
+        "PHP",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Embedded Systems Development",
+      "level": "Intermediate",
+      "keywords": [
+        "C",
+        "C++",
+        "Verilog",
+        "ARMV7"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "French",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Swift",
+      "keywords": []
+    },
+    {
+      "name": "Renewable Energy",
+      "keywords": []
+    },
+    {
+      "name": "Climate Change",
+      "keywords": []
+    },
+    {
+      "name": "Internet Privacy",
+      "keywords": []
+    },
+    {
+      "name": "Biking",
+      "keywords": []
+    }
+  ],
+  "references": []
+}
