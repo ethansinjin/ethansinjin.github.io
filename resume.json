@@ -9,7 +9,7 @@
     "summary": "I'm a Computer Science and Computer Engineering student from Kentucky who's passionate about extraordinary user interactions, Bluetooth, and mobile app development. I attend programming competitions and bike around town in my spare time.",
     "location": {
       "address": "University of Kentucky",
-      "postalCode": "",
+      "postalCode": "40502",
       "city": "Lexington",
       "countryCode": "USA",
       "region": "Kentucky"
@@ -29,6 +29,31 @@
   },
   "work": [
     {
+      "company": "Fooji",
+      "position": "Lead Mobile Developer",
+      "website": "https://fooji.com",
+      "startDate": "2017-05-08",
+      "endDate": "",
+      "summary": "Fooji helps brands create unique and engaging fan experiences by leveraging social media networks and on-demand delivery services.",
+      "highlights": [
+        "Building consumer-facing iOS application from scratch using Swift 4",
+        "Using GraphQL and Apollo iOS for model layer to ensure performance",
+        "Working with clients including Disney, Fox, and Amazon"
+      ]
+    },
+    {
+      "company": "Bask",
+      "position": "Lead Engineer",
+      "website": "https://brainly.co",
+      "startDate": "2017-01-08",
+      "endDate": "2017-05-08",
+      "summary": "Bask created a teacher-to-student video platform for the education technology community. It was acquired by Brainly in January 2018.",
+      "highlights": [
+        "Oversaw development of entire web video platform using React on NodeJS",
+        "Configured multiple AWS tools, including Elastic Beanstalk and S3, which powered Bask's web platform"
+      ]
+    },
+    {
       "company": "Automatic Labs",
       "position": "iOS Intern",
       "website": "https://automatic.com",
@@ -45,6 +70,7 @@
       "position": "Software Engineer",
       "website": "https://elinkdesign.com",
       "startDate": "2015-04-01",
+      "endDate": "2017-01-08",
       "summary": "eLink Design is Lexington, KY's premiere app and web development firm. Specializations include mobile messaging, social network applications, and full-featured website administration.",
       "highlights": [
         "Developed several class-leading social and enterprise applications using Swift and Objective-C as Lead iOS Developer",
@@ -69,6 +95,7 @@
       "position": "Committee President",
       "website": "http://cathacks.com",
       "startDate": "2014-10-01",
+      "endDate": "2017-05-08",
       "summary": "CatHacks is Kentucky's first and furthest-reaching collegiate hackathon. Held each Spring, CatHacks brings college students together from all over the country for a fast-paced weekend of learning, creation, and fun. CatHacks is sanctioned by Major League Hacking.",
       "highlights": [
         "Organized Kentucky's first and second national hackathons",
@@ -183,10 +210,11 @@
       "name": "Full Stack Web Development",
       "level": "Intermediate",
       "keywords": [
-        "JQuery",
-        "Bootstrap",
+        "React",
+        "NodeJS",
+        "JavaScript",
         "PHP",
-        "MySQL"
+        "MySQL and PostgreSQL"
       ]
     },
     {
@@ -196,7 +224,7 @@
         "C",
         "C++",
         "Verilog",
-        "ARMV7"
+        "ARMV8"
       ]
     }
   ],
