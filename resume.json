@@ -6,7 +6,7 @@
     "email": "ethan.gill@live.com",
     "phone": "+1 (270) 779-0753",
     "website": "https://ethansinjin.com",
-    "summary": "I'm a Computer Science and Computer Engineering student from Kentucky who's passionate about extraordinary user interactions, Bluetooth, and mobile app development. I attend programming competitions and bike around town in my spare time.",
+    "summary": "I'm a Computer Scientist from Kentucky who's passionate about extraordinary user interactions, Bluetooth, and mobile app development. I attend programming competitions and bike around town in my spare time.",
     "location": {
       "address": "University of Kentucky",
       "postalCode": "40502",
@@ -29,16 +29,29 @@
   },
   "work": [
     {
+      "company": "Accenture Digital",
+      "position": "Business Technology Integration Consultant",
+      "website": "https://accenture.com/digital",
+      "startDate": "2017-06-28",
+      "endDate": "Present",
+      "summary": "Accenture Digital is a global consulting company that leads in several specialized fields.",
+      "highlights": [
+        "Responsible for leading a team of analysts, testers, and engineers",
+        "Working with large clients in the communications and electronics industries",
+        "Specializing in hybrid and native web/mobile applications"
+      ]
+    },
+    {
       "company": "Fooji",
       "position": "Lead Mobile Developer",
       "website": "https://fooji.com",
       "startDate": "2017-05-08",
-      "endDate": "",
+      "endDate": "2018-05-10",
       "summary": "Fooji helps brands create unique and engaging fan experiences by leveraging social media networks and on-demand delivery services.",
       "highlights": [
-        "Building consumer-facing iOS application from scratch using Swift 4",
-        "Using GraphQL and Apollo iOS for model layer to ensure performance",
-        "Working with clients including Disney, Fox, and Amazon"
+        "Built a consumer-facing iOS application from scratch using Swift 4",
+        "Used GraphQL and Apollo iOS for local model layer",
+        "Worked with clients including Disney, Fox, and Amazon"
       ]
     },
     {
