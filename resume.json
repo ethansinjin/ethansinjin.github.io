@@ -93,7 +93,7 @@
     {
       "company": "Conceptual Systems Corporation",
       "position": "iOS Developer",
-      "website": "http://www.conceptualsystems.com",
+      "website": "https://conceptualsystems.com",
       "startDate": "2014-09-01",
       "endDate": "2015-04-01",
       "summary": "",
@@ -131,7 +131,7 @@
     {
       "organization": "Boy Scouts of America",
       "position": "Eagle Scout",
-      "website": "http://scouting.org",
+      "website": "https://scouting.org",
       "startDate": "2004-01-01",
       "endDate": "2014-09-04",
       "summary": "The Boy Scouts of America helps young adults live to the fullest by encouraging ample service, teaching civic responsibilities and fitness habits from a young age, and providing a safe environment to learn.",
@@ -146,6 +146,7 @@
       "institution": "University of Kentucky",
       "area": "Computer Science and Computer Engineering",
       "studyType": "Bachelor",
+      "website": "http://cs.uky.edu",
       "startDate": "2014-08-20",
       "endDate": "2018-05-01",
       "gpa": "3.42",
@@ -162,6 +163,7 @@
       "institution": "Western Kentucky University",
       "area": "Gatton Academy of Mathematics and Science in Kentucky",
       "studyType": "Graduate Honors With Distinction",
+      "website": "https://wku.edu/academy",
       "startDate": "2012-08-19",
       "endDate": "2014-05-17",
       "gpa": "3.68",
