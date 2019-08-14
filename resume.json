@@ -215,6 +215,7 @@
       "level": "Advanced",
       "keywords": [
         "Java",
+        "Kotlin",
         "Android Studio",
         "Gradle"
       ]
@@ -223,8 +224,9 @@
       "name": "Full Stack Web Development",
       "level": "Intermediate",
       "keywords": [
-        "React",
         "NodeJS",
+        "React",
+        "Angular",
         "JavaScript",
         "PHP",
         "MySQL and PostgreSQL"
@@ -257,7 +259,7 @@
   ],
   "interests": [
     {
-      "name": "Swift",
+      "name": "Swift Community",
       "keywords": []
     },
     {
