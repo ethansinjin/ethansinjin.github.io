@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ethansinjin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ethansinjin.com
+  * I am ethansinjin (https://keybase.io/ethansinjin) on keybase.
+  * I have a public key ASDCvNY3pl3NCL6GO80NDxLGVSAGR00lGpbZldtWnId_jAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f5367d6ffba983394db13b0032477680c36b87410e24b42e4779fdb83f7bfae30a",
+      "host": "keybase.io",
+      "kid": "0120c2bcd637a65dcd08be863bcd0d0f12c6552006474d251a96d995db569c877f8c0a",
+      "uid": "50da121ca4f09cf8cf5b969f32ef4919",
+      "username": "ethansinjin"
+    },
+    "merkle_root": {
+      "ctime": 1579388081,
+      "hash": "936a57ffe47b06f8456a49794bebb5c84ac0d947b6e2ef8c3884d79dee96adbf7616eb6efaac59e945b832fd67e86f5ad95c00e285f71305d05b451c827f4b3f",
+      "hash_meta": "7109ec66e8ad0f01992ce8f86c59064992e5743a11c7bb8f064ec80e69edde20",
+      "seqno": 14279424
+    },
+    "service": {
+      "entropy": "pcx2EM61SFXiofKovjNeQ0Zf",
+      "hostname": "ethansinjin.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1579388094,
+  "expire_in": 504576000,
+  "prev": "8aeef9ac976413d44896be81e79bbe81625dbac9cda7b8748ea04b7810727fb0",
+  "seqno": 30,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgwrzWN6ZdzQi+hjvNDQ8SxlUgBkdNJRqW2ZXbVpyHf4wKp3BheWxvYWTESpcCHsQgiu75rJdkE9RIlr6B55u+gWJdusnNp7h0jqBLeBByf7DEIGeuC9lfSCi323CZL+CBHjCNLc8ubJz1YxYGOyuh5+loAgHCo3NpZ8RAbI1yeZ8HMzt7R7FkEnZHagXAbcpm6kozOanU70cKmDiAq4738w+LH2U92i98+XWRsvL1r5ClN+ioHpcNf3aJA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMCvfBBhtkcC6BLIWDHUWwbJnWP6eWKgnEupsqx0DcTPo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ethansinjin
+
+==================================================================
