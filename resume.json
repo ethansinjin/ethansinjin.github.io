@@ -6,19 +6,24 @@
     "email": "ethan.gill@live.com",
     "phone": "+1 (270) 779-0753",
     "website": "https://ethansinjin.com",
-    "summary": "I'm a Computer Scientist from Kentucky who's passionate about extraordinary user interactions, wireless technologies, and mobile app development. I attend programming competitions and bike around town in my spare time.",
+    "summary": "I'm a Computer Scientist from Kentucky who's passionate about extraordinary user interactions, wireless technologies, mobile app development, and the next generation of computing. I bike, run, boulder, and play board games around the city in my spare time.",
     "location": {
-      "address": "University of Kentucky",
-      "postalCode": "40502",
-      "city": "Lexington",
+      "address": "New York City",
+      "postalCode": "10019",
+      "city": "New York",
       "countryCode": "USA",
-      "region": "Kentucky"
+      "region": "New York"
     },
     "profiles": [
       {
-        "network": "Twitter",
+        "network": "Instagram",
         "username": "ethansinjin",
-        "url": "https://twitter.com/ethansinjin"
+        "url": "https://instagram.com/ethansinjin/"
+      },
+      {
+        "network": "Threads",
+        "username": "ethansinjin",
+        "url": "https://threads.net/@ethansinjin"
       },
       {
         "network": "LinkedIn",
@@ -29,12 +34,25 @@
   },
   "work": [
     {
+      "company": "Meta",
+      "position": "Software Engineer",
+      "website": "https://www.metacareers.com/",
+      "startDate": "2020-05-11",
+      "endDate": "Present",
+      "summary": "Meta Reality Labs builds new, innovative hardware and software that radically redefines the way people work, play and connect.",
+      "highlights": [
+        "Stabilized and deployed automated e2e testing for Bluetooth pairing and OTA updates for Ray-Ban Stories",
+        "Building augments platform for Meta Quest 3",
+        "Working on AR/VR products"
+      ]
+    },
+    {
       "company": "Accenture Digital",
       "position": "Business Technology Integration Consultant",
-      "website": "https://accenture.com/digital",
+      "website": "https://www.accenture.com/us-en/careers",
       "startDate": "2018-06-28",
-      "endDate": "Present",
-      "summary": "Accenture Digital is a global consulting company that leads in several specialized fields.",
+      "endDate": "2020-05-08",
+      "summary": "Accenture is a global consulting company that leads in several specialized fields.",
       "highlights": [
         "Responsible for leading a team of analysts, testers, and engineers",
         "Working with large clients in the communications and electronics industries",
@@ -205,9 +223,15 @@
       "level": "Master",
       "keywords": [
         "Swift",
+        "SwiftUI",
+        "Combine",
         "Objective-C",
+        "Objective-C++",
+        "C++",
         "Xcode",
+        "React Native",
         "ReactiveCocoa",
+        "Swift Package Manager",
         "Cocoapods",
         "Carthage"
       ]
@@ -216,21 +240,25 @@
       "name": "Android Development",
       "level": "Advanced",
       "keywords": [
-        "Java",
         "Kotlin",
+        "Java",
+        "Android NDK",
+        "React Native",
         "Android Studio",
-        "Gradle"
+        "Gradle",
+        "Bazel/BUCK"
       ]
     },
     {
       "name": "Full Stack Web Development",
       "level": "Intermediate",
       "keywords": [
-        "NodeJS",
         "React",
         "Angular",
         "JavaScript",
+        "NodeJS",
         "PHP",
+        "Hack",
         "MySQL and PostgreSQL"
       ]
     },
@@ -238,8 +266,9 @@
       "name": "Embedded Systems Development",
       "level": "Intermediate",
       "keywords": [
-        "C",
         "C++",
+        "C",
+        "ECOS",
         "Verilog",
         "ARMV8"
       ]
@@ -252,11 +281,7 @@
     },
     {
       "language": "Spanish",
-      "fluency": "Intermediate"
-    },
-    {
-      "language": "French",
-      "fluency": "Beginner"
+      "fluency": "Novice"
     }
   ],
   "interests": [
