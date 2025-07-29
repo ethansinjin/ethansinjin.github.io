@@ -182,7 +182,7 @@
             transform: scale(1.05);
         }
 
-        .directions-btn {
+        .card-btn {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             border: none;
@@ -196,7 +196,7 @@
             margin-top: 10px;
         }
 
-        .directions-btn:hover {
+        .card-btn:hover {
             transform: scale(1.05);
         }
 
@@ -312,6 +312,7 @@
                 <h3>When</h3>
                 <p><strong>Date:</strong> Saturday, October 11th</p>
                 <p><strong>Time:</strong> 6:00 PM - 10:00 PM</p>
+                <a href="party.ics" class="card-btn" download>Add to Calendar</a>
             </div>
 
             <div class="card">
@@ -320,7 +321,7 @@
                 <p>The Skybox</p>
                 <p>Louisville Slugger Museum & Factory</p>
                 <p>800 W Main St, Louisville, KY 40202</p>
-                <button class="directions-btn" onclick="showDirectionsModal('venue')">Get Directions</button>
+                <button class="card-btn" onclick="showDirectionsModal('venue')">Get Directions</button>
             </div>
 
             <div class="card">
@@ -329,7 +330,7 @@
                 <p>Direct Garage Entrance to Venue</p>
                 <p>8th & Main Parking Garage</p>
                 <p>120 S 8th St, Louisville, KY 40202</p>
-                <button class="directions-btn" onclick="showDirectionsModal('parking')">Get Directions</button>
+                <button class="card-btn" onclick="showDirectionsModal('parking')">Get Directions</button>
             </div>
 
             <div class="card">
@@ -374,8 +375,7 @@
         <div id="directionsModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeDirectionsModal()">&times;</span>
-                <h3>Choose Maps App</h3>
-                <p id="modalText">Select your preferred maps application:</p>
+                <h3>Which Maps App?</h3>
                 <div>
                     <button class="modal-btn" onclick="openAppleMaps()">Apple Maps</button>
                     <button class="modal-btn" onclick="openGoogleMaps()">Google Maps</button>
