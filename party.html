@@ -35,7 +35,7 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: "Domine", serif;
             background: url('images/party_header.jpg') no-repeat center center fixed;
             background-size: cover;
             min-height: 100vh;
@@ -220,6 +220,10 @@
         }
 
         .countdown h1 {
+            font-family: "Domine", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
             font-size: 2.5rem;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -295,39 +299,79 @@
         }
 
         .rsvp-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             color: white;
-            border: none;
             padding: 15px 30px;
             font-size: 1.1rem;
-            border-radius: 50px;
+            border-radius: 15px;
             cursor: pointer;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
             margin-top: 15px;
+            font-family: "Domine", serif;
         }
 
         .rsvp-btn:hover {
-            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .card-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             color: white;
-            border: none;
             padding: 10px 20px;
             font-size: 0.9rem;
-            border-radius: 25px;
+            border-radius: 12px;
             cursor: pointer;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
             margin-top: 10px;
+            font-family: "Domine", serif;
         }
 
         .card-btn:hover {
-            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (prefers-reduced-transparency: reduce) {
+            .rsvp-btn {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                border: none;
+                border-radius: 50px;
+            }
+            
+            .rsvp-btn:hover {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                transform: scale(1.05);
+                box-shadow: none;
+            }
+            
+            .card-btn {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                border: none;
+                border-radius: 25px;
+            }
+            
+            .card-btn:hover {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                transform: scale(1.05);
+                box-shadow: none;
+            }
         }
 
         .modal {
@@ -357,19 +401,40 @@
         }
 
         .modal-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             color: white;
-            border: none;
             padding: 12px 24px;
             margin: 5px;
-            border-radius: 25px;
+            border-radius: 12px;
             cursor: pointer;
             font-size: 1rem;
-            transition: transform 0.3s ease;
+            font-family: "Domine", serif;
+            transition: all 0.3s ease;
         }
 
         .modal-btn:hover {
-            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (prefers-reduced-transparency: reduce) {
+            .modal-btn {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                border: none;
+                border-radius: 25px;
+            }
+            
+            .modal-btn:hover {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                transform: scale(1.05);
+                box-shadow: none;
+            }
         }
 
         .close {
