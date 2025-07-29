@@ -106,6 +106,9 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
             color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         @media (prefers-reduced-transparency: reduce) {
@@ -338,7 +341,7 @@
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: auto;
             font-family: "Domine", serif;
         }
 
@@ -542,8 +545,7 @@
             <div class="card">
                 <div class="card-icon">📍</div>
                 <h3>Where</h3>
-                <p>The Skybox</p>
-                <p>Louisville Slugger Museum & Factory</p>
+                <p>The Skybox<br/>Louisville Slugger Museum & Factory</p>
                 <p>800 W Main St, Louisville, KY 40202</p>
                 <button class="card-btn" onclick="showDirectionsModal('venue')">Get Directions</button>
             </div>
