@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
     <title>Ethan and Lindsey's 5 Year Anniversary Celebration</title>
     <style>
         * {
@@ -12,11 +15,47 @@
             box-sizing: border-box;
         }
 
+        a {
+            color: #87CEEB;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #B0E0E6;
+        }
+
+        @media (prefers-reduced-transparency: reduce) {
+            a {
+                color: #667eea;
+            }
+            
+            a:hover {
+                color: #764ba2;
+            }
+        }
+
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: url('images/party_header.jpg') no-repeat center center fixed;
+            background-size: cover;
             min-height: 100vh;
             padding: 20px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(64, 64, 64, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: -1;
         }
 
         .container {
@@ -31,6 +70,10 @@
         }
 
         .header h1 {
+            font-family: "Domine", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
             font-size: 3rem;
             margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -49,12 +92,27 @@
         }
 
         .card {
-            background: white;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 15px;
             padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
+            color: white;
+        }
+
+        @media (prefers-reduced-transparency: reduce) {
+            .card {
+                background: white;
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                border: none;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                color: #333;
+            }
         }
 
         .card:hover {
@@ -68,15 +126,25 @@
         }
 
         .card h3 {
-            color: #333;
+            color: white;
             margin-bottom: 15px;
             font-size: 1.5rem;
         }
 
         .card p {
-            color: #666;
+            color: rgba(255, 255, 255, 0.9);
             line-height: 1.6;
             margin-bottom: 15px;
+        }
+
+        @media (prefers-reduced-transparency: reduce) {
+            .card h3 {
+                color: #333;
+            }
+            
+            .card p {
+                color: #666;
+            }
         }
 
         .card ul {
@@ -103,27 +171,58 @@
         }
 
         .card-highlight {
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-            color: #333;
+            background: rgba(255, 236, 210, 0.25);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 204, 153, 0.3);
+            color: white;
         }
 
         .card-highlight h3 {
-            color: #2c3e50;
+            color: white;
+        }
+
+        @media (prefers-reduced-transparency: reduce) {
+            .card-highlight {
+                background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                border: none;
+                color: #333;
+            }
+            
+            .card-highlight h3 {
+                color: #2c3e50;
+            }
         }
 
         .countdown {
-            background: #2c3e50;
+            background: rgba(44, 62, 80, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
             border-radius: 15px;
             padding: 30px;
             text-align: center;
             margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (prefers-reduced-transparency: reduce) {
+            .countdown {
+                background: #2c3e50;
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                border: none;
+                box-shadow: none;
+            }
         }
 
         .countdown h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .countdown h2 {
@@ -157,11 +256,42 @@
         }
 
         .rsvp-section {
-            background: white;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 15px;
             padding: 30px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+
+        .rsvp-section h2 {
+            color: white;
+        }
+
+        .rsvp-section p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        @media (prefers-reduced-transparency: reduce) {
+            .rsvp-section {
+                background: white;
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                border: none;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                color: #333;
+            }
+            
+            .rsvp-section h2 {
+                color: #333;
+            }
+            
+            .rsvp-section p {
+                color: #666;
+            }
         }
 
         .rsvp-btn {
@@ -208,7 +338,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
         .modal-content {
@@ -218,7 +348,7 @@
             border-radius: 15px;
             width: 300px;
             text-align: center;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
 
         .modal-content h3 {
@@ -365,10 +495,11 @@
         <div class="rsvp-section">
             <div class="card-icon">💌</div>
             <h2>RSVP</h2>
-            <br/>
+            <br />
             <p>We can't wait to celebrate with you!</p>
             <p>Please confirm your attendance by September 1st with the RSVP cards sent via US Mail.</p>
-            <a href="https://www.icloud.com/invites/03bQiAygKqReVazuJCH8yGY-A" class="rsvp-btn">View on Apple Invites</a>
+            <a href="https://www.icloud.com/invites/03bQiAygKqReVazuJCH8yGY-A" class="rsvp-btn">View on Apple
+                Invites</a>
         </div>
 
         <!-- Modal for directions -->
@@ -430,16 +561,16 @@
 
         // Directions modal functionality
         let currentLocation = '';
-        
+
         function showDirectionsModal(location) {
             currentLocation = location;
             document.getElementById('directionsModal').style.display = 'block';
         }
-        
+
         function closeDirectionsModal() {
             document.getElementById('directionsModal').style.display = 'none';
         }
-        
+
         function openAppleMaps() {
             if (currentLocation === 'venue') {
                 window.open('https://maps.apple/p/6g.-nXBwy285v8', '_blank');
@@ -448,7 +579,7 @@
             }
             closeDirectionsModal();
         }
-        
+
         function openGoogleMaps() {
             if (currentLocation === 'venue') {
                 window.open('https://maps.app.goo.gl/7EAJj1amQmEtJqTr9', '_blank');
@@ -457,9 +588,9 @@
             }
             closeDirectionsModal();
         }
-        
+
         // Close modal when clicking outside of it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             const modal = document.getElementById('directionsModal');
             if (event.target === modal) {
                 closeDirectionsModal();
