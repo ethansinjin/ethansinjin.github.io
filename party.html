@@ -45,6 +45,10 @@
             position: relative;
         }
 
+        body.modal-open {
+            overflow: hidden;
+        }
+
         body::before {
             content: '';
             position: fixed;
@@ -390,7 +394,7 @@
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            position: fixed;
+            position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -655,10 +659,12 @@
         function showDirectionsModal(location) {
             currentLocation = location;
             document.getElementById('directionsModal').style.display = 'block';
+            document.body.classList.add('modal-open');
         }
 
         function closeDirectionsModal() {
             document.getElementById('directionsModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
         }
 
         function openAppleMaps() {
