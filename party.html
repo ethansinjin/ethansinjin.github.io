@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan and Lindsey's 5 Year Anniversary Celebration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .header-card {
+            background: white;
+            border-radius: 15px;
+            padding: 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .header-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 300px;
+            object-fit: cover;
+            object-position: 50% 45%;
+        }
+
+        .card-highlight {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            color: #333;
+        }
+
+        .card-highlight h3 {
+            color: #2c3e50;
+        }
+
+        .countdown {
+            background: #2c3e50;
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .countdown h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .time-unit {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            min-width: 80px;
+        }
+
+        .time-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .time-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .rsvp-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .rsvp-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .rsvp-btn:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .countdown-timer {
+                gap: 10px;
+            }
+
+            .time-unit {
+                min-width: 60px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ethan and Lindsey's 5 Year Anniversary Celebration</h1>
+        </div>
+
+        <div class="countdown">
+            <div class="countdown-timer" id="countdown">
+                <div class="time-unit">
+                    <span class="time-number" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-card">
+            <img src="images/party_header.jpg" alt="Ethan and Lindsey's 5 Year Anniversary Celebration">
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">📅</div>
+                <h3>When</h3>
+                <p><strong>Date:</strong> Saturday, October 11th</p>
+                <p><strong>Time:</strong> 6:00 PM - 10:00 PM</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📍</div>
+                <h3>Where</h3>
+                <p>The Skybox</p>
+                <p>Louisville Slugger Museum & Factory</p>
+                <p>800 W Main St, Louisville, KY 40202</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🅿️</div>
+                <h3>Parking</h3>
+                <p>Direct Garage Entrance to Venue</p>
+                <p>8th & Main Parking Garage</p>
+                <p>120 S 8th St, Louisville, KY 40202</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🍽️</div>
+                <h3>Food & Drinks</h3>
+                <p>Enjoy a delicious spread of appetizers, main courses, and desserts.</p>
+                <p>Open bar with signature cocktails and beverages for all!</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">👕/👗</div>
+                <h3>Dress Code</h3>
+                <p>Smart casual to semi-formal attire.</p>
+                <p>Dress like you're going out to a nice dinner with friends, not a wedding!</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💌</div>
+                <h3>RSVP</h3>
+                <p>We can't wait to celebrate with you! Invite cards have been mailed as of July 29th, 2025.</p>
+                <p>Please confirm your attendance by September 1st.</p>
+                <!-- <a href="mailto:your-email@example.com?subject=5 Year Anniversary RSVP" class="rsvp-btn">RSVP Now</a> -->
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🏨</div>
+                <h3>Nearby Hotels</h3>
+                <p>For out-of-town guests, here are some recommended accommodations near the venue:</p>
+                <ul>
+                    <li><a href="https://21cmuseumhotels.com/louisville/" target="_blank">21c Museum Hotel
+                            Louisville</a></li>
+                    <li><a href="https://galthouse.com" target="_blank">The Galt House Hotel</a></li>
+                    <li><a href="https://www.hilton.com/en/hotels/loudthw-homewood-suites-louisville-downtown/"
+                            target="_blank">Homewood Suites by Hilton</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="rsvp-section">
+            <div class="card-icon">💌</div>
+            <h2>RSVP</h2>
+            <br/>
+            <p>We can't wait to celebrate with you!</p>
+            <p>Please confirm your attendance by September 1st with the RSVP cards sent via US Mail.</p>
+            <a href="https://www.icloud.com/invites/03bQiAygKqReVazuJCH8yGY-A" class="rsvp-btn">View on Apple Invites</a>
+        </div>
+    </div>
+
+    <script>
+        const celebrationDate = new Date("2025-10-11T22:00:00Z").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = celebrationDate - now;
+
+            if (distance < 0) {
+                document.getElementById("countdown").innerHTML = "<h2>🎉 The celebration has begun! 🎉</h2>";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days.toString().padStart(2, '0');
+            document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Update countdown immediately and then every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Add some interactive card animations
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+
+</html>
